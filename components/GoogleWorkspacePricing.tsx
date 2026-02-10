@@ -2,14 +2,6 @@
 import React from "react";
 import Image from "next/image";
 
-const ClientLogo = ({ name }: { name: string }) => (
-  <div className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
-    {/* Placeholder for logos since I don't have the assets. 
-         Using text for now, can be replaced with <Image> later. */}
-    <span className="text-sm font-bold text-gray-500">{name}</span>
-  </div>
-);
-
 const FeatureItem = ({
   icon,
   text,
@@ -25,7 +17,7 @@ const FeatureItem = ({
 
 const GoogleWorkspacePricing = () => {
   return (
-    <div className="font-sans bg-white py-16 px-4 md:px-8">
+    <div className="font-sans bg-white  px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-gray-600 text-lg mb-6 font-medium">
@@ -40,8 +32,12 @@ const GoogleWorkspacePricing = () => {
             </span>
           </p>
 
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 mt-8">
-            <img src={"groups.png"} alt="group" />
+          <div className="flex flex-wrap justify-center py-8 items-center gap-8 md:gap-16 mt-8 relative w-full">
+            <img
+              src={"groups.png"}
+              className="object-contain h-auto w-full max-w-[600px] md:max-w-4xl"
+              alt="group"
+            />
           </div>
         </div>
 

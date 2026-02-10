@@ -5,79 +5,16 @@ const GoogleWorkspacePromo = () => {
   return (
     <div className="font-sans bg-white flex items-center justify-center p-5 md:py-16">
       <div className="max-w-5xl w-full text-center flex flex-col items-center">
-        <div className="mb-8 flex flex-col items-center">
+        <div className="mb-8 flex flex-col justify-center items-center">
           <h1 className="text-[2.5rem] md:text-[3.5rem]  text-[#5f6368] mb-6 tracking-tight leading-none">
             <span className="text-blue-500">Google Workspace</span>
           </h1>
           <div className="flex gap-4 md:gap-6 justify-center items-center">
-            <div className="w-8 h-8 md:w-10 md:h-10">
-              <svg viewBox="0 0 24 24" className="w-full h-full">
-                <path
-                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
-                  fill="#EA4335"
-                />
-              </svg>
-            </div>
-            <div className="w-8 h-8 md:w-10 md:h-10">
-              <svg viewBox="0 0 24 24" className="w-full h-full">
-                <path
-                  d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"
-                  fill="#4285F4"
-                />
-                <text
-                  x="50%"
-                  y="65%"
-                  dominantBaseline="middle"
-                  textAnchor="middle"
-                  fill="#4285F4"
-                  fontSize="10"
-                  fontWeight="bold"
-                >
-                  31
-                </text>
-              </svg>
-            </div>
-            <div className="w-8 h-8 md:w-10 md:h-10">
-              <svg viewBox="0 0 24 24" className="w-full h-full">
-                <path
-                  d="M8.667 3.5h7.333l3.667 6.333H12.333L8.667 3.5z"
-                  fill="#FFBA00"
-                />
-                <path
-                  d="M19.667 9.833h-7.333l-3.667 6.334h7.333l3.667-6.334z"
-                  fill="#2684FC"
-                />
-                <path
-                  d="M8.667 16.167L5 9.833 8.667 3.5h-7.333L-2.333 9.833l3.667 6.334h7.333z"
-                  fill="#00AC47"
-                  transform="rotate(-60 6.833 9.833)"
-                />
-              </svg>
-            </div>
-            <div className="w-8 h-8 md:w-10 md:h-10">
-              <svg viewBox="0 0 24 24" className="w-full h-full">
-                <path
-                  d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
-                  fill="#2684FC"
-                />
-                <path d="M14.5 2V7.5H20" fill="#2684FC" />
-                <path d="M14.5 2v5.5H20L14.5 2z" fill="#8AB4F8" />
-                <path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h5v2H8z" fill="white" />
-              </svg>
-            </div>
-            <div className="w-8 h-8 md:w-10 md:h-10">
-              <svg viewBox="0 0 24 24" className="w-full h-full">
-                <circle cx="12" cy="12" r="10" fill="#fff" />
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                  fill="none"
-                />
-                <path
-                  d="M13 11.5l5.5-4.5v10l-5.5-4.5v3.5A1.5 1.5 0 0 1 11.5 17.5h-8A1.5 1.5 0 0 1 2 16V8a1.5 1.5 0 0 1 1.5-1.5h8A1.5 1.5 0 0 1 13 8v3.5z"
-                  fill="#00AC47"
-                />
-              </svg>
-            </div>
+            <img
+              src="/aunty-apps.png"
+              className="w-full relative left-6 h-[40px]"
+              alt=""
+            />
           </div>
         </div>
 

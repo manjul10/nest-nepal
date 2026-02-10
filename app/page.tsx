@@ -6,6 +6,7 @@ import GoogleWorkspaceBrands from "@/components/GoogleWorkspaceBrands";
 import GoogleWorkspaceCTA from "@/components/GoogleWorkspaceCTA";
 import VideoDemoSection from "@/components/VideoDemoSection";
 import FAQSection from "@/components/Faq";
+import GoogleWorkspaceSolutions from "@/components/GoogleWorkspaceSolutions";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <GoogleWorkspacePromo />
       <VideoDemoSection />
       <GoogleWorkspacePricing />
+      <GoogleWorkspaceSolutions />
       <GoogleWorkspaceFeatures />
       <GoogleWorkspaceBrands />
       <GoogleWorkspaceCTA />

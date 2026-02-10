@@ -97,7 +97,7 @@ const GoogleWorkspaceFeatures = () => {
         </div>
 
         {/* Included Apps Section */}
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full hidden md:flex flex-col items-center">
           <h4 className="text-xl font-bold text-gray-800 mb-10">
             Google Workspace includes:
           </h4>
