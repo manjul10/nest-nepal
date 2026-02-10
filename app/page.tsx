@@ -15,11 +15,11 @@ export default function Home() {
       <GoogleWorkspacePromo />
       <VideoDemoSection />
       <GoogleWorkspacePricing />
-      <GoogleWorkspaceSolutions />
       <GoogleWorkspaceFeatures />
+      <GoogleWorkspaceSolutions />
       <GoogleWorkspaceBrands />
-      <GoogleWorkspaceCTA />
       <FAQSection />
+      <GoogleWorkspaceCTA />
       <Footer />
     </main>
   );
