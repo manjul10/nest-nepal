@@ -1,26 +1,29 @@
-# 🧑‍💻 Internship Task – Next.js Application
+# 🎨 Frontend Web Application
 
-This project was developed as part of an **internship task**, demonstrating practical skills in modern web development using **Next.js** and related tools.
+A modern **frontend web application** built with **Next.js (App Router)**, focused on responsive UI, performance, and clean component structure.
 
-## 🎯 Objective
+## ✨ Features
 
-The goal of this task is to:
-- Build a functional and well-structured web application
-- Follow modern frontend development practices
-- Write clean, readable, and maintainable code
+- ⚡ Built with **Next.js 14+**
+- 🧩 Component-based frontend architecture
+- 🎨 Styled using **Tailwind CSS**
+- 📱 Fully responsive design
+- 🔤 Optimized fonts with `next/font`
+- 🧼 Clean, readable, and maintainable code
 
 ## 🛠 Tech Stack
 
-- **Framework:** Next.js (App Router)
+- **Framework:** Next.js
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Font Optimization:** next/font
+- **UI Approach:** Modern, responsive design
 - **Package Manager:** npm
 
 ## 📂 Project Structure
 
 ```txt
 app/
- ├── page.tsx        # Main page
+ ├── page.tsx        # Main UI page
  ├── layout.tsx      # Root layout
+ ├── components/     # Reusable UI components
  ├── globals.css     # Global styles
