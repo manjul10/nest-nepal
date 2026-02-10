@@ -45,20 +45,16 @@ export default function FAQSection() {
   return (
     <div className="w-full bg-white py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        {/* Title */}
         <h2 className="text-4xl font-normal text-center mb-12 text-gray-900">
           Frequently Asked Questions{" "}
           <span className="text-blue-500">(FAQs)</span>
         </h2>
 
-        {/* FAQ Accordion */}
         <div className="space-y-0">
           {faqData.map((faq, index) => (
             <div key={faq.id}>
-              {/* Divider */}
               {index === 0 && <div className="h-px bg-gray-200 mb-0"></div>}
 
-              {/* FAQ Item */}
               <div className="border-b border-gray-200">
                 <button
                   onClick={() => toggleQuestion(faq.id)}
@@ -68,7 +64,6 @@ export default function FAQSection() {
                     {faq.question}
                   </span>
 
-                  {/* Chevron Icon */}
                   <svg
                     className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-300 ${
                       openId === faq.id ? "rotate-180" : ""
@@ -86,7 +81,6 @@ export default function FAQSection() {
                   </svg>
                 </button>
 
-                {/* Answer */}
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
                     openId === faq.id

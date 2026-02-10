@@ -61,7 +61,6 @@ const GoogleWorkspaceSolutions = () => {
             work is changing.
           </SolutionCard>
 
-          {/* Card 2: For small business */}
           <SolutionCard title="For small business" image={"newbusiness.png"}>
             Tools for <span className="text-[#3b82f6]">small businesses</span>{" "}
             that help teams and{" "}
@@ -69,7 +68,6 @@ const GoogleWorkspaceSolutions = () => {
             tasks like scheduling appointments and email marketing.
           </SolutionCard>
 
-          {/* Card 3: For new business */}
           <SolutionCard title="For new business" image={"newbusiness.png"}>
             Essentials tools for{" "}
             <span className="text-[#3b82f6]">new businesses</span> and{" "}

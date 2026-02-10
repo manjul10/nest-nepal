@@ -1,31 +1,10 @@
 "use client";
 import React from "react";
 
-const AppIcon = ({
-  name,
-  color,
-  path,
-}: {
-  name: string;
-  color: string;
-  path: React.ReactNode;
-}) => (
-  <div className="flex flex-col items-center gap-2 group cursor-pointer">
-    <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:scale-110">
-      <svg viewBox="0 0 24 24" className="w-full h-full" fill="none">
-        {path}
-      </svg>
-    </div>
-    <span className="text-xs text-gray-500 font-medium">{name}</span>
-  </div>
-);
-
 const GoogleWorkspaceFeatures = () => {
-  // Reusing paths from previous components where possible, utilizing standard material icons or shapes
   return (
     <div className="font-sans bg-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        {/* Main Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-normal text-black mb-2">
             <span
@@ -54,9 +33,7 @@ const GoogleWorkspaceFeatures = () => {
           </h3>
         </div>
 
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl w-full mb-16 text-center">
-          {/* Feature 1 */}
           <div className="flex flex-col items-center">
             <h4 className="text-xl font-medium text-gray-900 mb-4">
               Premium AI built-in
@@ -66,7 +43,6 @@ const GoogleWorkspaceFeatures = () => {
               Gemini in Gmail, Docs, Sheets, and more.
             </p>
           </div>
-          {/* Feature 2 */}
           <div className="flex flex-col items-center">
             <h4 className="text-xl font-medium text-gray-900 mb-4">
               Tools born in the Cloud
@@ -76,7 +52,6 @@ const GoogleWorkspaceFeatures = () => {
               always up-to-date.
             </p>
           </div>
-          {/* Feature 3 */}
           <div className="flex flex-col items-center">
             <h4 className="text-xl font-medium text-gray-900 mb-4">
               Enterprise-grade security
@@ -88,7 +63,6 @@ const GoogleWorkspaceFeatures = () => {
           </div>
         </div>
 
-        {/* Action Button */}
         <div className="mb-20">
           <button className="bg-white border border-gray-400 text-gray-800 hover:bg-gray-50 px-8 py-3 rounded-full text-base font-medium transition-colors flex items-center justify-center gap-2">
             Get a quotation
@@ -96,7 +70,6 @@ const GoogleWorkspaceFeatures = () => {
           </button>
         </div>
 
-        {/* Included Apps Section */}
         <div className="w-full hidden md:flex flex-col items-center">
           <h4 className="text-xl font-bold text-gray-800 mb-10">
             Google Workspace includes:

@@ -14,11 +14,8 @@ const GoogleWorkspaceCTA = () => {
   return (
     <div className="font-sans bg-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto bg-[#F8F9FA] rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row items-center relative">
-        {/* Left Content */}
         <div className="w-full md:w-1/2 p-8 md:p-16 z-10">
-          {/* Icons Row */}
           <div className="flex gap-4 mb-8">
-            {/* Gmail */}
             <img src={"/aunty-apps.png"} />
           </div>
 
@@ -67,7 +64,6 @@ const GoogleWorkspaceCTA = () => {
           </div>
         </div>
 
-        {/* Right Visual */}
         <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] flex items-end justify-center overflow-hidden">
           <div className="relative z-10 w-full h-full flex items-end justify-center">
             <img
@@ -77,33 +73,6 @@ const GoogleWorkspaceCTA = () => {
             />
           </div>
         </div>
-
-        <style jsx global>{`
-          @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap");
-          @keyframes blob {
-            0% {
-              transform: translate(0px, 0px) scale(1);
-            }
-            33% {
-              transform: translate(30px, -50px) scale(1.1);
-            }
-            66% {
-              transform: translate(-20px, 20px) scale(0.9);
-            }
-            100% {
-              transform: translate(0px, 0px) scale(1);
-            }
-          }
-          .animate-blob {
-            animation: blob 7s infinite;
-          }
-          .animation-delay-2000 {
-            animation-delay: 2s;
-          }
-          .animation-delay-4000 {
-            animation-delay: 4s;
-          }
-        `}</style>
       </div>
     </div>
   );
