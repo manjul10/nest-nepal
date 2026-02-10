@@ -1,0 +1,118 @@
+"use client";
+import React from "react";
+
+const AppIcon = ({
+  name,
+  color,
+  path,
+}: {
+  name: string;
+  color: string;
+  path: React.ReactNode;
+}) => (
+  <div className="flex flex-col items-center gap-2 group cursor-pointer">
+    <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:scale-110">
+      <svg viewBox="0 0 24 24" className="w-full h-full" fill="none">
+        {path}
+      </svg>
+    </div>
+    <span className="text-xs text-gray-500 font-medium">{name}</span>
+  </div>
+);
+
+const GoogleWorkspaceFeatures = () => {
+  // Reusing paths from previous components where possible, utilizing standard material icons or shapes
+  return (
+    <div className="font-sans bg-white py-16 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
+        {/* Main Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-normal text-black mb-2">
+            <span
+              className="text-[#3b82f6] font-semibold"
+              style={{ fontFamily: "Noto Sans Devanagari, sans-serif" }}
+            >
+              सबै{" "}
+            </span>
+            <span className="font-medium">Tools </span>
+            <span
+              className="text-[#3b82f6] font-semibold"
+              style={{ fontFamily: "Noto Sans Devanagari, sans-serif" }}
+            >
+              एउटै{" "}
+            </span>
+            <span className="font-medium">Platform </span>
+            <span
+              className="font-medium"
+              style={{ fontFamily: "Noto Sans Devanagari, sans-serif" }}
+            >
+              मा
+            </span>
+          </h2>
+          <h3 className="text-3xl md:text-5xl font-medium text-[#5f6368]">
+            Google Workspace
+          </h3>
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl w-full mb-16 text-center">
+          {/* Feature 1 */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-xl font-medium text-gray-900 mb-4">
+              Premium AI built-in
+            </h4>
+            <p className="text-gray-600 leading-relaxed max-w-xs">
+              Do your best work faster with the Gemini app, NotebookLM, and
+              Gemini in Gmail, Docs, Sheets, and more.
+            </p>
+          </div>
+          {/* Feature 2 */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-xl font-medium text-gray-900 mb-4">
+              Tools born in the Cloud
+            </h4>
+            <p className="text-gray-600 leading-relaxed max-w-xs">
+              Collaborate in real time, from any device, across tools that are
+              always up-to-date.
+            </p>
+          </div>
+          {/* Feature 3 */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-xl font-medium text-gray-900 mb-4">
+              Enterprise-grade security
+            </h4>
+            <p className="text-gray-600 leading-relaxed max-w-xs">
+              Protect your emails, files, and meetings with AI-powered security
+              and compliance controls.
+            </p>
+          </div>
+        </div>
+
+        {/* Action Button */}
+        <div className="mb-20">
+          <button className="bg-white border border-gray-400 text-gray-800 hover:bg-gray-50 px-8 py-3 rounded-full text-base font-medium transition-colors flex items-center justify-center gap-2">
+            Get a quotation
+            <span className="transform -translate-y-[1px]">↗</span>
+          </button>
+        </div>
+
+        {/* Included Apps Section */}
+        <div className="w-full flex flex-col items-center">
+          <h4 className="text-xl font-bold text-gray-800 mb-10">
+            Google Workspace includes:
+          </h4>
+
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 max-w-6xl">
+            <img src={"/apps.png"} />
+          </div>
+        </div>
+
+        <style jsx global>{`
+          @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap");
+        `}</style>
+      </div>
+    </div>
+  );
+};
+
+export default GoogleWorkspaceFeatures;

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+@font-face {
+  font-family: 'MagnoliaScript';
+  src: url('/fonts/MagnoliaScript-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
